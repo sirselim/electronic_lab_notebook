@@ -444,40 +444,79 @@ body {
       </div>
 
       <div class="post-content">
-        <p>We are going to host our final notebook on GitHub, so having access to to-do lists is a nice benefit.</p>
-<p>Here’s an example:</p>
-<div id="solar-system-exploration-1950s-1960s" class="section level3">
-<h3>Solar System Exploration, 1950s – 1960s</h3>
-<ul>
-<li>[ ] Mercury</li>
-<li>[x] Venus</li>
-<li>[x] Earth (Orbit/Moon)</li>
-<li>[x] Mars</li>
-<li>[ ] Jupiter</li>
-<li>[ ] Saturn</li>
-<li>[ ] Uranus</li>
-<li>[ ] Neptune</li>
-<li>[ ] Comet Haley</li>
-</ul>
-<p>… and the Markdown that creates this:</p>
-<pre><code>### Solar System Exploration, 1950s – 1960s
-
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley</code></pre>
-<p>So we can create to-do lists for specific days/projects/assignments etc.</p>
+        <div id="markdown-checkboxes" class="section level3">
+<h3>Markdown checkboxes</h3>
+<p>We can create to-do lists for specific days/projects/assignments etc, here’s an example:</p>
 <ul>
 <li>[x] Learn about RMarkdown</li>
 <li>[x] Set up an electronic lab notebook</li>
 <li>[ ] Perform a simple regression</li>
 <li>[ ] Load some data and clean it</li>
 </ul>
+<p>… and the Markdown that creates this:</p>
+<pre><code>- [x] Learn about RMarkdown
+- [x] Set up an electronic lab notebook
+- [ ] Perform a simple regression
+- [ ] Load some data and clean it</code></pre>
+</div>
+<div id="html-checkboxes" class="section level3">
+<h3>HTML checkboxes</h3>
+<p>It seems that when using Netlify to host the notebook the checkboxes don’t display, this will be due to the ‘flavour’ of markdown used. As far as I’m aware only GitHub flavoured markdown supports checkboxes natively. A workaround is to use a little bit of HTML:</p>
+<p><strong>My to-do list:</strong></p>
+<p><input id="checkBox" type="checkbox" checked> Learn about RMarkdown<br />
+<input id="checkBox" type="checkbox" checked> Set up an electronic lab notebook<br />
+<input id="checkBox" type="checkbox" checked> Perform a simple regression<br />
+<input id="checkBox" type="checkbox"> Load some data and clean it<br />
+<input id="checkBox" type="checkbox" checked> Add a working checkbox example</p>
+<p>… and the code for this:</p>
+<pre><code>&lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot; checked&gt; Learn about RMarkdown  
+&lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot; checked&gt; Set up an electronic lab notebook  
+&lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot; checked&gt; Perform a simple regression  
+&lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot;&gt; Load some data and clean it  
+&lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot; checked&gt; Add a working checkbox example </code></pre>
+<p>So not as simple as markdown but it works.</p>
+<p>We can also use a little more HTML and inline css to create nested checkboxes:</p>
+<ul style="list-style: none;">
+<li>
+<input id="checkBox" type="checkbox" checked> Learn about RMarkdown
+</li>
+<ul style="list-style: none;">
+<li>
+<input id="checkBox" type="checkbox" checked> Set up an electronic lab notebook
+</li>
+<li>
+<input id="checkBox" type="checkbox" checked> Add a working checkbox example
+</li>
+</ul>
+<li>
+<input id="checkBox" type="checkbox" checked> Perform a simple regression
+</li>
+<li>
+<input id="checkBox" type="checkbox"> Load some data and clean it
+</li>
+<ul style="list-style: none;">
+<li>
+<input id="checkBox" type="checkbox"> learn about tidy data
+</li>
+<li>
+<input id="checkBox" type="checkbox"> install tidyverse package
+</li>
+</ul>
+</ul>
+<p>… and the code:</p>
+<pre><code>&lt;ul style=&quot;list-style: none;&quot;&gt;  
+ &lt;li&gt; &lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot; checked&gt; Learn about RMarkdown&lt;/li&gt;
+  &lt;ul style=&quot;list-style: none;&quot;&gt;  
+   &lt;li&gt; &lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot; checked&gt; Set up an electronic lab notebook&lt;/li&gt;
+   &lt;li&gt; &lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot; checked&gt; Add a working checkbox example&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;li&gt; &lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot; checked&gt; Perform a simple regression&lt;/li&gt;
+ &lt;li&gt; &lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot;&gt; Load some data and clean it &lt;/li&gt;
+  &lt;ul style=&quot;list-style: none;&quot;&gt;  
+   &lt;li&gt; &lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot;&gt; learn about tidy data&lt;/li&gt;
+   &lt;li&gt; &lt;input id=&quot;checkBox&quot; type=&quot;checkbox&quot;&gt; install tidyverse package&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/ul&gt;</code></pre>
 </div>
 
       </div>
