@@ -2,7 +2,7 @@ baseURL = "/"
 title = "Electronic Lab Notebook"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
-copyright = "(c) 2017 - 2018 -- All rights reserved."
+copyright = "(c) 2018 -- All rights reserved."
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]

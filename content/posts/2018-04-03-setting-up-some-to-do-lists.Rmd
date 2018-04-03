@@ -1,12 +1,13 @@
 ---
 title: Setting up some to-do lists
-author: Miles Benton
+author: Your Name
 date: '2018-04-03'
 slug: setting-up-some-to-do-lists
 categories:
   - To-do
 tags:
   - To-do list
+menu: "main"
 ---
 
 We are going to host our final notebook on GitHub, so having access to to-do lists is a nice benefit.
