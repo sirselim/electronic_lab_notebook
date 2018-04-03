@@ -1,0 +1,30 @@
+---
+title: Performing simple linear regressions in R
+author: Your Name
+date: '2018-03-28'
+slug: performing-simple-linear-regressions-in-r
+categories:
+  - Experiment
+  - Coding
+tags:
+  - R
+  - Regression
+  - Analysis
+---
+
+## Linear regression
+
+We will use the `mtcars` data, specifically the miles per gallon (mpg) versus the weight (wt) - we obviously expect to see a strong association between these two variables.  
+```{r}
+fit <- lm(mpg~wt, data=mtcars)
+summary(fit)
+```
+
+## Plotting
+
+We can create a simple scatter plot of mpg vs wt an then fit the regression line to this:
+```{r}
+plot(mtcars$mpg, mtcars$wt, pch = 19, col = 'cadetblue', xlab = 'mpg', ylab = 'wt')
+abline(lm(wt~mpg, data=mtcars), lty = 2, lwd = 2, col = 'grey65')
+```
+

@@ -1,0 +1,49 @@
+---
+title: Setting up some to-do lists
+author: Miles Benton
+date: '2018-04-03'
+slug: setting-up-some-to-do-lists
+categories:
+  - To-do
+tags:
+  - To-do list
+---
+
+We are going to host our final notebook on GitHub, so having access to to-do lists is a nice benefit.
+
+Here's an example:
+
+### Solar System Exploration, 1950s – 1960s
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
+
+... and the Markdown that creates this:
+
+```
+### Solar System Exploration, 1950s – 1960s
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
+```
+
+So we can create to-do lists for specific days/projects/assignments etc.
+
+- [x] Learn about RMarkdown
+- [x] Set up an electronic lab notebook
+- [ ] Perform a simple regression
+- [ ] Load some data and clean it

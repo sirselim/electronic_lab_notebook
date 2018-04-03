@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Packages on Electronic Lab Notebook</title>
+    <link>/tags/r-packages/</link>
+    <description>Recent content in R Packages on Electronic Lab Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>your@email.com (Your Name)</managingEditor>
+    <webMaster>your@email.com (Your Name)</webMaster>
+    <copyright>(c) 2017 - 2018 -- All rights reserved.</copyright>
+    <lastBuildDate>Tue, 27 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r-packages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrating Python into your R code with reticulate</title>
+      <link>/posts/integrating-python-into-your-r-code-with-reticulate/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/integrating-python-into-your-r-code-with-reticulate/</guid>
+      <description>The recent introduction of the R package reticulate now allows for the seemless integration of Python coding into an R workflow. Here I’ll provide a very simple, quick example using reticulate in an RMarkdown document within RStudio, for further detail see https://github.com/rstudio/reticulate#python-in-r-markdown.
+Setting up Install the reticulate package:
+install.packages(&amp;#39;reticulate&amp;#39;)  Running Python within an R chunk We can now directly import packages within an R chunk in RMarkdown:
+require(reticulate) # load reticulate package os &amp;lt;- import(&amp;quot;os&amp;quot;) # import os os$listdir(&amp;quot;.</description>
+    </item>
+    
+  </channel>
+</rss>

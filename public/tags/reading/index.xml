@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading on Electronic Lab Notebook</title>
+    <link>/tags/reading/</link>
+    <description>Recent content in Reading on Electronic Lab Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>your@email.com (Your Name)</managingEditor>
+    <webMaster>your@email.com (Your Name)</webMaster>
+    <copyright>(c) 2017 - 2018 -- All rights reserved.</copyright>
+    <lastBuildDate>Sun, 11 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Summary of a fantastic paper</title>
+      <link>/posts/summary-of-a-fantastic-review-paper/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/summary-of-a-fantastic-review-paper/</guid>
+      <description>Let’s pretend that you’ve read a great manuscript/article and you want to document some of your thoughts, you can easily do this as an entry in your lab notebook. You can make it simple to track down such entries by adding them to say a ‘Writing’ category.
+You can bullet point your notes using Markdown:
+ really good point in the second paragraph of the discussion Figure 3 was very informative interesting results, might be worth checking if data set is available  These can be numbered as well:</description>
+    </item>
+    
+  </channel>
+</rss>

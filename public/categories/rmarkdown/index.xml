@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rmarkdown on Electronic Lab Notebook</title>
+    <link>/categories/rmarkdown/</link>
+    <description>Recent content in Rmarkdown on Electronic Lab Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>your@email.com (Miles Benton)</managingEditor>
+    <webMaster>your@email.com (Miles Benton)</webMaster>
+    <copyright>(c) 2017 - 2018 Miles Benton -- All rights reserved.</copyright>
+    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An introduction to blogdown for lab notebooks</title>
+      <link>/posts/an-introduction-to-blogdown-for-lab-notebooks/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Miles Benton)</author>
+      <guid>/posts/an-introduction-to-blogdown-for-lab-notebooks/</guid>
+      <description>This is a test  </description>
+    </item>
+    
+  </channel>
+</rss>

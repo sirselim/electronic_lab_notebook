@@ -1,0 +1,14 @@
+---
+title: Does RMarkdown work?
+author: Miles Benton
+date: '2018-04-01'
+slug: does-rmarkdown-work
+categories: ['Experiment', 'R']
+tags: ['R']
+menu: "main"
+---
+
+```{r}
+head(mtcars)
+```
+

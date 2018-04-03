@@ -1,0 +1,47 @@
+---
+title: Performing simple linear regressions in R
+author: Your Name
+date: '2018-03-28'
+slug: performing-simple-linear-regressions-in-r
+categories:
+  - Experiment
+  - Coding
+tags:
+  - R
+  - Regression
+  - Analysis
+---
+
+
+
+<div id="linear-regression" class="section level2">
+<h2>Linear regression</h2>
+<p>We will use the <code>mtcars</code> data, specifically the miles per gallon (mpg) versus the weight (wt) - we obviously expect to see a strong association between these two variables.</p>
+<pre class="r"><code>fit &lt;- lm(mpg~wt, data=mtcars)
+summary(fit)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = mtcars)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4.5432 -2.3647 -0.1252  1.4096  6.8727 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
+## wt           -5.3445     0.5591  -9.559 1.29e-10 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.046 on 30 degrees of freedom
+## Multiple R-squared:  0.7528, Adjusted R-squared:  0.7446 
+## F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
+</div>
+<div id="plotting" class="section level2">
+<h2>Plotting</h2>
+<p>We can create a simple scatter plot of mpg vs wt an then fit the regression line to this:</p>
+<pre class="r"><code>plot(mtcars$mpg, mtcars$wt, pch = 19, col = &#39;cadetblue&#39;, xlab = &#39;mpg&#39;, ylab = &#39;wt&#39;)
+abline(lm(wt~mpg, data=mtcars), lty = 2, lwd = 2, col = &#39;grey65&#39;)</code></pre>
+<p><img src="/posts/2018-03-28-performing-simple-linear-regressions-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>

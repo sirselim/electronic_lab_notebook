@@ -1,0 +1,26 @@
+---
+title: Summary of a fantastic paper
+author: Your Name
+date: '2018-02-11'
+slug: summary-of-a-fantastic-review-paper
+categories:
+  - Reading
+tags:
+  - Reading
+  - Literature
+menu: "main"
+---
+
+Let's pretend that you've read a great manuscript/article and you want to document some of your thoughts, you can easily do this as an entry in your lab notebook. You can make it simple to track down such entries by adding them to say a 'Writing' category.
+
+You can bullet point your notes using Markdown:
+
+  - really good point in the second paragraph of the discussion
+  - Figure 3 was very informative
+  - interesting results, might be worth checking if data set is available
+  
+These can be numbered as well:
+
+  1. really good point in the second paragraph of the discussion
+  2. Figure 3 was very informative
+  3. interesting results, might be worth checking if data set is available

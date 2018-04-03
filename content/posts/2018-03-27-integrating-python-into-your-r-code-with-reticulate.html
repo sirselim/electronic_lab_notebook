@@ -1,0 +1,99 @@
+---
+title: Integrating Python into your R code with reticulate
+author: Your Name
+date: '2018-03-27'
+slug: integrating-python-into-your-r-code-with-reticulate
+categories:
+  - Coding
+tags:
+  - R
+  - R packages
+  - reticulate
+  - Python
+---
+
+
+
+<p>The recent introduction of the R package <a href="https://github.com/rstudio/reticulate">reticulate</a> now allows for the seemless integration of Python coding into an R workflow. Here I’ll provide a very simple, quick example using <code>reticulate</code> in an RMarkdown document within RStudio, for further detail see <a href="https://github.com/rstudio/reticulate#python-in-r-markdown" class="uri">https://github.com/rstudio/reticulate#python-in-r-markdown</a>.</p>
+<div id="setting-up" class="section level2">
+<h2>Setting up</h2>
+<p>Install the reticulate package:</p>
+<pre class="r"><code>install.packages(&#39;reticulate&#39;)</code></pre>
+</div>
+<div id="running-python-within-an-r-chunk" class="section level2">
+<h2>Running Python within an R chunk</h2>
+<p>We can now directly import packages within an R chunk in RMarkdown:</p>
+<pre class="r"><code>require(reticulate) # load reticulate package
+os &lt;- import(&quot;os&quot;)  # import os
+os$listdir(&quot;.&quot;)     # use listdir function of os to list the contents of current dir</code></pre>
+<pre><code>##  [1] &quot;2018-04-01-introduction-to-rmarkdown.Rmd&quot;                            
+##  [2] &quot;2018-03-27-integrating-python-into-your-r-code-with-reticulate.Rmd&quot;  
+##  [3] &quot;2018-04-03-collaborative-online-writing-with-authorea.Rmd&quot;           
+##  [4] &quot;2018-04-01-introduction-to-rmarkdown.html&quot;                           
+##  [5] &quot;2018-04-03-collaborative-online-writing-with-authorea.html&quot;          
+##  [6] &quot;2018-02-11-summary-of-a-fantastic-review-paper.Rmd&quot;                  
+##  [7] &quot;2018-03-27-integrating-python-into-your-r-code-with-reticulate_files&quot;
+##  [8] &quot;2018-03-27-integrating-python-into-your-r-code-with-reticulate.html&quot; 
+##  [9] &quot;test.png&quot;                                                            
+## [10] &quot;2018-03-28-performing-simple-linear-regressions-in-r.Rmd&quot;            
+## [11] &quot;2018-02-11-summary-of-a-fantastic-review-paper.html&quot;                 
+## [12] &quot;2018-03-28-performing-simple-linear-regressions-in-r.html&quot;</code></pre>
+</div>
+<div id="running-python-within-a-python-chunk" class="section level2">
+<h2>Running Python within a Python chunk</h2>
+<p>Can evaluate python within a chunk:</p>
+<pre class="python"><code>import numpy as np
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2*np.pi*t)
+print(s)</code></pre>
+<pre><code>## [1.00000000e+00 1.06279052e+00 1.12533323e+00 1.18738131e+00
+##  1.24868989e+00 1.30901699e+00 1.36812455e+00 1.42577929e+00
+##  1.48175367e+00 1.53582679e+00 1.58778525e+00 1.63742399e+00
+##  1.68454711e+00 1.72896863e+00 1.77051324e+00 1.80901699e+00
+##  1.84432793e+00 1.87630668e+00 1.90482705e+00 1.92977649e+00
+##  1.95105652e+00 1.96858316e+00 1.98228725e+00 1.99211470e+00
+##  1.99802673e+00 2.00000000e+00 1.99802673e+00 1.99211470e+00
+##  1.98228725e+00 1.96858316e+00 1.95105652e+00 1.92977649e+00
+##  1.90482705e+00 1.87630668e+00 1.84432793e+00 1.80901699e+00
+##  1.77051324e+00 1.72896863e+00 1.68454711e+00 1.63742399e+00
+##  1.58778525e+00 1.53582679e+00 1.48175367e+00 1.42577929e+00
+##  1.36812455e+00 1.30901699e+00 1.24868989e+00 1.18738131e+00
+##  1.12533323e+00 1.06279052e+00 1.00000000e+00 9.37209480e-01
+##  8.74666766e-01 8.12618685e-01 7.51310113e-01 6.90983006e-01
+##  6.31875447e-01 5.74220708e-01 5.18246326e-01 4.64173205e-01
+##  4.12214748e-01 3.62576010e-01 3.15452894e-01 2.71031373e-01
+##  2.29486757e-01 1.90983006e-01 1.55672074e-01 1.23693320e-01
+##  9.51729475e-02 7.02235141e-02 4.89434837e-02 3.14168389e-02
+##  1.77127493e-02 7.88529869e-03 1.97327157e-03 0.00000000e+00
+##  1.97327157e-03 7.88529869e-03 1.77127493e-02 3.14168389e-02
+##  4.89434837e-02 7.02235141e-02 9.51729475e-02 1.23693320e-01
+##  1.55672074e-01 1.90983006e-01 2.29486757e-01 2.71031373e-01
+##  3.15452894e-01 3.62576010e-01 4.12214748e-01 4.64173205e-01
+##  5.18246326e-01 5.74220708e-01 6.31875447e-01 6.90983006e-01
+##  7.51310113e-01 8.12618685e-01 8.74666766e-01 9.37209480e-01
+##  1.00000000e+00 1.06279052e+00 1.12533323e+00 1.18738131e+00
+##  1.24868989e+00 1.30901699e+00 1.36812455e+00 1.42577929e+00
+##  1.48175367e+00 1.53582679e+00 1.58778525e+00 1.63742399e+00
+##  1.68454711e+00 1.72896863e+00 1.77051324e+00 1.80901699e+00
+##  1.84432793e+00 1.87630668e+00 1.90482705e+00 1.92977649e+00
+##  1.95105652e+00 1.96858316e+00 1.98228725e+00 1.99211470e+00
+##  1.99802673e+00 2.00000000e+00 1.99802673e+00 1.99211470e+00
+##  1.98228725e+00 1.96858316e+00 1.95105652e+00 1.92977649e+00
+##  1.90482705e+00 1.87630668e+00 1.84432793e+00 1.80901699e+00
+##  1.77051324e+00 1.72896863e+00 1.68454711e+00 1.63742399e+00
+##  1.58778525e+00 1.53582679e+00 1.48175367e+00 1.42577929e+00
+##  1.36812455e+00 1.30901699e+00 1.24868989e+00 1.18738131e+00
+##  1.12533323e+00 1.06279052e+00 1.00000000e+00 9.37209480e-01
+##  8.74666766e-01 8.12618685e-01 7.51310113e-01 6.90983006e-01
+##  6.31875447e-01 5.74220708e-01 5.18246326e-01 4.64173205e-01
+##  4.12214748e-01 3.62576010e-01 3.15452894e-01 2.71031373e-01
+##  2.29486757e-01 1.90983006e-01 1.55672074e-01 1.23693320e-01
+##  9.51729475e-02 7.02235141e-02 4.89434837e-02 3.14168389e-02
+##  1.77127493e-02 7.88529869e-03 1.97327157e-03 0.00000000e+00
+##  1.97327157e-03 7.88529869e-03 1.77127493e-02 3.14168389e-02
+##  4.89434837e-02 7.02235141e-02 9.51729475e-02 1.23693320e-01
+##  1.55672074e-01 1.90983006e-01 2.29486757e-01 2.71031373e-01
+##  3.15452894e-01 3.62576010e-01 4.12214748e-01 4.64173205e-01
+##  5.18246326e-01 5.74220708e-01 6.31875447e-01 6.90983006e-01
+##  7.51310113e-01 8.12618685e-01 8.74666766e-01 9.37209480e-01]</code></pre>
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>To Do List on Electronic Lab Notebook</title>
+    <link>/tags/to-do-list/</link>
+    <description>Recent content in To Do List on Electronic Lab Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>your@email.com (Your Name)</managingEditor>
+    <webMaster>your@email.com (Your Name)</webMaster>
+    <copyright>(c) 2017 - 2018 -- All rights reserved.</copyright>
+    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/to-do-list/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up some to-do lists</title>
+      <link>/posts/setting-up-some-to-do-lists/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/setting-up-some-to-do-lists/</guid>
+      <description>We are going to host our final notebook on GitHub, so having access to to-do lists is a nice benefit.
+Here’s an example:
+Solar System Exploration, 1950s – 1960s  [ ] Mercury [x] Venus [x] Earth (Orbit/Moon) [x] Mars [ ] Jupiter [ ] Saturn [ ] Uranus [ ] Neptune [ ] Comet Haley  … and the Markdown that creates this:
+### Solar System Exploration, 1950s – 1960s - [ ] Mercury - [x] Venus - [x] Earth (Orbit/Moon) - [x] Mars - [ ] Jupiter - [ ] Saturn - [ ] Uranus - [ ] Neptune - [ ] Comet Haley So we can create to-do lists for specific days/projects/assignments etc.</description>
+    </item>
+    
+  </channel>
+</rss>

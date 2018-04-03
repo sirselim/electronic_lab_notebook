@@ -1,0 +1,26 @@
+---
+title: Introduction to RMarkdown
+author: Miles Benton
+date: '2018-04-01'
+slug: introduction-to-rmarkdown
+categories:
+  - Experiment
+  - R
+tags:
+  - R
+  - Rmarkdown
+menu: 'main'
+---
+
+# This is an example entry using RMarkdown
+
+Test text here
+
+## Here is another heading 
+
+Can insert R code in 'chunks':
+
+```{r}
+head(mtcars)
+```
+

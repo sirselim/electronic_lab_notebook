@@ -1,0 +1,17 @@
+---
+title: Collaborative online writing with Authorea
+author: Miles Benton
+date: '2018-02-07'
+slug: collaborative-online-writing-with-authorea
+categories:
+  - Writing
+tags:
+  - Writing
+  - Authorea
+menu: main
+---
+
+# What is Authorea?
+
+[Authorea](https://www.authorea.com/) is an online collaborative writing tool that allows researchers to write, cite, collaborate, host data and publish. It has been described as *“Google Docs for Scientists”*.
+

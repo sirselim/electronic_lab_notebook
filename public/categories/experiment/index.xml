@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experiment on Electronic Lab Notebook</title>
+    <link>/categories/experiment/</link>
+    <description>Recent content in Experiment on Electronic Lab Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>your@email.com (Your Name)</managingEditor>
+    <webMaster>your@email.com (Your Name)</webMaster>
+    <copyright>(c) 2017 - 2018 -- All rights reserved.</copyright>
+    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/experiment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to RMarkdown</title>
+      <link>/posts/introduction-to-rmarkdown/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/introduction-to-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min.</description>
+    </item>
+    
+    <item>
+      <title>Performing simple linear regressions in R</title>
+      <link>/posts/performing-simple-linear-regressions-in-r/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/performing-simple-linear-regressions-in-r/</guid>
+      <description>Linear regression We will use the mtcars data, specifically the miles per gallon (mpg) versus the weight (wt) - we obviously expect to see a strong association between these two variables.
+fit &amp;lt;- lm(mpg~wt, data=mtcars) summary(fit) ## ## Call: ## lm(formula = mpg ~ wt, data = mtcars) ## ## Residuals: ## Min 1Q Median 3Q Max ## -4.5432 -2.3647 -0.1252 1.4096 6.8727 ## ## Coefficients: ## Estimate Std. Error t value Pr(&amp;gt;|t|) ## (Intercept) 37.</description>
+    </item>
+    
+  </channel>
+</rss>

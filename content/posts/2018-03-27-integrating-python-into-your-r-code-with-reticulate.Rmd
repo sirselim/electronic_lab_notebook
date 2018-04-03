@@ -1,0 +1,45 @@
+---
+title: Integrating Python into your R code with reticulate
+author: Your Name
+date: '2018-03-27'
+slug: integrating-python-into-your-r-code-with-reticulate
+categories:
+  - Coding
+tags:
+  - R
+  - R packages
+  - reticulate
+  - Python
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The recent introduction of the R package [reticulate](https://github.com/rstudio/reticulate) now allows for the seemless integration of Python coding into an R workflow. Here I'll provide a very simple, quick example using `reticulate` in an RMarkdown document within RStudio, for further detail see https://github.com/rstudio/reticulate#python-in-r-markdown.
+
+## Setting up
+
+Install the reticulate package:
+```{r, eval=FALSE}
+install.packages('reticulate')
+```
+
+## Running Python within an R chunk
+
+We can now directly import packages within an R chunk in RMarkdown:
+```{r, warning=FALSE, message=FALSE}
+require(reticulate) # load reticulate package
+os <- import("os")  # import os
+os$listdir(".")     # use listdir function of os to list the contents of current dir
+```
+
+## Running Python within a Python chunk
+
+Can evaluate python within a chunk:
+```{python}
+import numpy as np
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2*np.pi*t)
+print(s)
+```

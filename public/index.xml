@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electronic Lab Notebook</title>
+    <link>/</link>
+    <description>Recent content on Electronic Lab Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>your@email.com (Your Name)</managingEditor>
+    <webMaster>your@email.com (Your Name)</webMaster>
+    <copyright>(c) 2017 - 2018 -- All rights reserved.</copyright>
+    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About this electronic notebook</title>
+      <link>/about/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/about/</guid>
+      <description>This is a simple example of setting up an electronic lab notebook using blogdown and the static site generator hugo.
+The theme used it this example is a slightly modified version of temple, which is a minimal, distraction free theme suitable for electronic notebooking (in my opinion). If interested, you can find a large list of hugo themes here: https://themes.gohugo.io/
+The overall setup here involves each notebook entry (post) to be assigned at least one category, i.</description>
+    </item>
+    
+    <item>
+      <title>Setting up some to-do lists</title>
+      <link>/posts/setting-up-some-to-do-lists/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/setting-up-some-to-do-lists/</guid>
+      <description>We are going to host our final notebook on GitHub, so having access to to-do lists is a nice benefit.
+Here’s an example:
+Solar System Exploration, 1950s – 1960s  [ ] Mercury [x] Venus [x] Earth (Orbit/Moon) [x] Mars [ ] Jupiter [ ] Saturn [ ] Uranus [ ] Neptune [ ] Comet Haley  … and the Markdown that creates this:
+### Solar System Exploration, 1950s – 1960s - [ ] Mercury - [x] Venus - [x] Earth (Orbit/Moon) - [x] Mars - [ ] Jupiter - [ ] Saturn - [ ] Uranus - [ ] Neptune - [ ] Comet Haley So we can create to-do lists for specific days/projects/assignments etc.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to RMarkdown</title>
+      <link>/posts/introduction-to-rmarkdown/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/introduction-to-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min.</description>
+    </item>
+    
+    <item>
+      <title>Performing simple linear regressions in R</title>
+      <link>/posts/performing-simple-linear-regressions-in-r/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/performing-simple-linear-regressions-in-r/</guid>
+      <description>Linear regression We will use the mtcars data, specifically the miles per gallon (mpg) versus the weight (wt) - we obviously expect to see a strong association between these two variables.
+fit &amp;lt;- lm(mpg~wt, data=mtcars) summary(fit) ## ## Call: ## lm(formula = mpg ~ wt, data = mtcars) ## ## Residuals: ## Min 1Q Median 3Q Max ## -4.5432 -2.3647 -0.1252 1.4096 6.8727 ## ## Coefficients: ## Estimate Std. Error t value Pr(&amp;gt;|t|) ## (Intercept) 37.</description>
+    </item>
+    
+    <item>
+      <title>Integrating Python into your R code with reticulate</title>
+      <link>/posts/integrating-python-into-your-r-code-with-reticulate/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/integrating-python-into-your-r-code-with-reticulate/</guid>
+      <description>The recent introduction of the R package reticulate now allows for the seemless integration of Python coding into an R workflow. Here I’ll provide a very simple, quick example using reticulate in an RMarkdown document within RStudio, for further detail see https://github.com/rstudio/reticulate#python-in-r-markdown.
+Setting up Install the reticulate package:
+install.packages(&amp;#39;reticulate&amp;#39;)  Running Python within an R chunk We can now directly import packages within an R chunk in RMarkdown:
+require(reticulate) # load reticulate package os &amp;lt;- import(&amp;quot;os&amp;quot;) # import os os$listdir(&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Summary of a fantastic paper</title>
+      <link>/posts/summary-of-a-fantastic-review-paper/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/summary-of-a-fantastic-review-paper/</guid>
+      <description>Let’s pretend that you’ve read a great manuscript/article and you want to document some of your thoughts, you can easily do this as an entry in your lab notebook. You can make it simple to track down such entries by adding them to say a ‘Writing’ category.
+You can bullet point your notes using Markdown:
+ really good point in the second paragraph of the discussion Figure 3 was very informative interesting results, might be worth checking if data set is available  These can be numbered as well:</description>
+    </item>
+    
+    <item>
+      <title>Collaborative online writing with Authorea</title>
+      <link>/posts/collaborative-online-writing-with-authorea/</link>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/collaborative-online-writing-with-authorea/</guid>
+      <description>What is Authorea? Authorea is an online collaborative writing tool that allows researchers to write, cite, collaborate, host data and publish. It has been described as “Google Docs for Scientists”.
+ We built Authorea to empower researchers, scientists, students with a tool that would make the writing of scholarly papers more fun and more collaborative.
+  How do I use Authorea? https://www.authorea.com/users/92049/articles/110652-how-do-i-use-authorea
+You can start using Authorea in seconds by signing up for a free account and beginning a new document.</description>
+    </item>
+    
+  </channel>
+</rss>
