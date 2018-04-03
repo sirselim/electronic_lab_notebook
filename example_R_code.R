@@ -2,7 +2,7 @@
 ## Some simple code examples for setting up and creating blogdown content
 ## author:    Miles Benton
 ## created:   2018-04-03
-## modifiec:  2018-04-03
+## modified:  2018-04-04
 
 # setting some default options
 options(blogdown.ext = '.Rmd', blogdown.subdir = 'posts')
