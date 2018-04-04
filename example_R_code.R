@@ -57,6 +57,3 @@ blogdown::new_post(title = 'Integrating Python into your R code with reticulate'
                    author = 'Your Name',
                    categories = c('Coding'),
                    tags = c('R', 'R packages', 'reticulate', 'Python'))
-
-## NOTE: remember to replace the yaml line "type: default" with "menu: 'main'", or simply just 
-## delete "type: default" - either works

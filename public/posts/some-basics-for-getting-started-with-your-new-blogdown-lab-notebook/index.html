@@ -3,8 +3,8 @@
 <head>
   
   <meta charset="utf-8">
-  <title>To Do Lisl</title>
-  <meta name="description" content="To Do Lisl">
+  <title>Some basics for getting started with your new blogdown lab notebook</title>
+  <meta name="description" content="Some basics for getting started with your new blogdown lab notebook">
   <meta name="author" content="Your Name">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -231,13 +231,15 @@ body {
 	height: auto;
 }
 
-.post-content code {
+/* these sections screw up other themes */ 
+/*.post-content code {
   background-color: #EEE;
 }
 
 .post code {
   background-color: #EEE;
-}
+} */
+/* to here */
 
 .post a {
 	color:#c05b4d;
@@ -324,9 +326,90 @@ body {
   
   <style type="text/css" media="screen"> 
     
-      .hljs{display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff}.hljs-comment,.hljs-quote{color:#408080;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-subst{color:#954121}.hljs-number{color:#40a070}.hljs-string,.hljs-doctag{color:#219161}.hljs-selector-id,.hljs-selector-class,.hljs-section,.hljs-type{color:#19469d}.hljs-params{color:#00f}.hljs-title{color:#458;font-weight:bold}.hljs-tag,.hljs-name,.hljs-attribute{color:#000080;font-weight:normal}.hljs-variable,.hljs-template-variable{color:#008080}.hljs-regexp,.hljs-link{color:#b68}.hljs-symbol,.hljs-bullet{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:bold}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}
+      /*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3f3f3f;
+  color: #dcdcdc;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #e3ceab;
+}
+
+.hljs-template-tag {
+  color: #dcdcdc;
+}
+
+.hljs-number {
+  color: #8cd0d3;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: #efdcbc;
+}
+
+.hljs-literal {
+  color: #efefaf;
+}
+
+.hljs-subst {
+  color: #8f8f8f;
+}
+
+.hljs-title,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  color: #efef8f;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #dca3a3;
+}
+
+.hljs-deletion,
+.hljs-string,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #cc9393;
+}
+
+.hljs-addition,
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #7f9f7f;
+}
+
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+ 
     
   </style>
+  
 
   
   <link rel="shortcut icon" 
@@ -336,8 +419,6 @@ body {
   type="image/x-icon">
 
   
-  
-  <link href="/tags/to-do-lisl/index.xml" rel="alternate" type="application/rss+xml" title="Electronic Lab Notebook Feed" />
   
 
   <meta name="generator" content="Hugo 0.38" />
@@ -355,6 +436,10 @@ body {
             <a href="/" class="site-title pure-menu-heading">Electronic Lab Notebook</a>
             <ul class="pure-menu-list pull-right">
 				
+                
+                <li class="pure-menu-item">
+                    <a href="/categories/administration" class="pure-menu-link">Administration</a>
+                </li>
                 
                 <li class="pure-menu-item">
                     <a href="/categories/coding" class="pure-menu-link">Coding</a>
@@ -390,6 +475,10 @@ body {
 				
                 
                 <li class="pure-menu-item">
+                    <a href="/categories/administration" class="pure-menu-link">Administration</a>
+                </li>
+                
+                <li class="pure-menu-item">
                     <a href="/categories/coding" class="pure-menu-link">Coding</a>
                 </li>
                 
@@ -420,30 +509,97 @@ body {
 </div>
 
 
-
 <div class="pure-g">
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
   <div class="pure-u-11-12 pure-u-md-2-3">
-    <div class="post-content">
-      <p class="posts-name">To Do Lisl:</p>
+    <div class="post">
 
-      <ul class="posts">
+      <div class="post-title">
+        <p class="footnote">
+        <time class="">04-04-2018</time>
         
         
+        |
         
-        <li>
-          
-          <a class="post-list" href="/posts/setting-up-some-to-do-lists/">Setting up some to-do lists</a>
+        
+        tags: [ <a href="/tags/r">R</a> <a href="/tags/r-packages">R packages</a> <a href="/tags/rmarkdown">Rmarkdown</a> ]
+        
 
-          <p class="footnote">
-          <time datetime="04-03-2018">
-            04-03-2018
-          </time>
-          </p>
-        </li>
         
+        categories: [<a href="/categories/administration">Administration</a> <a href="/categories/coding">Coding</a> ]
         
-      </ul>
+
+        
+        </p>
+        <h1>Some basics for getting started with your new blogdown lab notebook</h1>
+      </div>
+
+      <div class="post-content">
+        <div id="global-options" class="section level2">
+<h2>Global options</h2>
+<p>It’s a good idea to set some global default options.</p>
+<pre class="r"><code># setting some default options
+options(blogdown.ext = &#39;.Rmd&#39;, blogdown.subdir = &#39;posts&#39;)</code></pre>
+<p><strong>NOTE:</strong> to avoid running this each session it is best to set these options in your .Rprofile so they take effect when launching RStudio</p>
+<ul>
+<li>see <a href="https://bookdown.org/yihui/blogdown/global-options.html" class="uri">https://bookdown.org/yihui/blogdown/global-options.html</a> for details around this</li>
+</ul>
+</div>
+<div id="dynamic-live-updating-previews-of-your-site" class="section level2">
+<h2>Dynamic (live updating) previews of your site</h2>
+<p>At the start of each session make sure you run the serve function. With this running you will be able to see in real-time all the changes that you make to your notebook site.</p>
+<pre class="r"><code># serve the website
+blogdown::serve_site()</code></pre>
+</div>
+<div id="creating-new-entries" class="section level2">
+<h2>Creating new entries</h2>
+<p>The following code snippets demonstrate creating new entries (notebook ‘posts’) under several different categories - also remember that if you are using RStudio with blogdown installed then you have access to some addins which can do this for you in a more user-friendly manner.</p>
+<p><strong>IMPORTANT:</strong> Remember that this notebook is set up in such a way that entries are recorded and listed under user defined categories. I suggest picking a handful of major categories (examples below) and only having an entry under one or two of these, then use the tag options to further list any keywords or searchvterms that you wish to associate with the entry. This system allows for quick easy searching and locating of specific entries. The home page lists all recent entries by date (newest first).</p>
+<p>Say I want an entry to appear under the category ‘<strong>Experiment</strong>’:</p>
+<pre class="r"><code># create a new entry under the category &#39;Experiment&#39;
+blogdown::new_post(title = &#39;Introduction to RMarkdown&#39;, 
+                   date = &#39;2018-04-01&#39;, 
+                   ext = &#39;.Rmd&#39;, 
+                   subdir = &#39;posts&#39;, 
+                   author = &#39;Your Name&#39;,
+                   categories = c(&#39;Experiment&#39;),
+                   tags = c(&#39;R&#39;, &#39;Rmarkdown&#39;))</code></pre>
+<p>I’ve done some reading and want to record some notes under a ‘<strong>Reading</strong>’ category:</p>
+<pre class="r"><code># create a new entry under the category &#39;Reading&#39;
+blogdown::new_post(title = &#39;Summary of a fantastic review paper&#39;, 
+                   date = &#39;2018-02-11&#39;, 
+                   ext = &#39;.Rmd&#39;, 
+                   subdir = &#39;posts&#39;, 
+                   author = &#39;Your Name&#39;,
+                   categories = c(&#39;Reading&#39;),
+                   tags = c(&#39;Reading&#39;, &#39;Literature&#39;))</code></pre>
+<p>I’m creating a category call ‘<strong>Writing</strong>’ and documenting the joys of Authorea:</p>
+<pre class="r"><code># create a new entry under the category &#39;Writing&#39;
+blogdown::new_post(title = &#39;Collaborative writing online using Authorea&#39;, 
+                   date = &#39;2018-03-20&#39;, 
+                   ext = &#39;.Rmd&#39;, 
+                   subdir = &#39;posts&#39;, 
+                   author = &#39;Your Name&#39;,
+                   categories = c(&#39;Writing&#39;),
+                   tags = c(&#39;Writing&#39;, &#39;Authorea&#39;))</code></pre>
+<p>I’ve performed a simple linear regression experiment and want to list it under ‘<strong>Experiments</strong>’:</p>
+<pre class="r"><code>## if you have global options set (as above) you can use the following:
+# adding a post on regression analysis to the Experiment category 
+blogdown::new_post(title = &#39;Performing simple linear regressions in R&#39;, 
+                   date = &#39;2018-03-28&#39;, 
+                   author = &#39;Your Name&#39;,
+                   categories = c(&#39;Experiment&#39;),
+                   tags = c(&#39;R&#39;, &#39;Regression&#39;, &#39;Analysis&#39;))</code></pre>
+<p>I’ve integrated some python code into my R workflow, I’ll file this under a category called ‘<strong>Coding</strong>’:</p>
+<pre class="r"><code># creating a post on the reticulate package in the category coding 
+blogdown::new_post(title = &#39;Integrating Python into your R code with reticulate&#39;, 
+                   date = &#39;2018-03-27&#39;, 
+                   author = &#39;Your Name&#39;,
+                   categories = c(&#39;Coding&#39;),
+                   tags = c(&#39;R&#39;, &#39;R packages&#39;, &#39;reticulate&#39;, &#39;Python&#39;))</code></pre>
+</div>
+
+      </div>
     </div>
   </div>
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
@@ -484,7 +640,7 @@ body {
         
       </div>
       
-      <p id="foot-copyright">(c) 2017 - 2018 -- All rights reserved.</p>
+      <p id="foot-copyright">(c) 2018 -- All rights reserved.</p>
       
     </div>
   </div>
@@ -499,9 +655,13 @@ body {
   
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/vim.min.js"></script>
   
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/sh.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>
   
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/R.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/markdown.min.js"></script>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
   
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
    

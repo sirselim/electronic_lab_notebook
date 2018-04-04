@@ -231,13 +231,15 @@ body {
 	height: auto;
 }
 
-.post-content code {
+/* these sections screw up other themes */ 
+/*.post-content code {
   background-color: #EEE;
 }
 
 .post code {
   background-color: #EEE;
-}
+} */
+/* to here */
 
 .post a {
 	color:#c05b4d;
@@ -324,9 +326,90 @@ body {
   
   <style type="text/css" media="screen"> 
     
-      .hljs{display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff}.hljs-comment,.hljs-quote{color:#408080;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-subst{color:#954121}.hljs-number{color:#40a070}.hljs-string,.hljs-doctag{color:#219161}.hljs-selector-id,.hljs-selector-class,.hljs-section,.hljs-type{color:#19469d}.hljs-params{color:#00f}.hljs-title{color:#458;font-weight:bold}.hljs-tag,.hljs-name,.hljs-attribute{color:#000080;font-weight:normal}.hljs-variable,.hljs-template-variable{color:#008080}.hljs-regexp,.hljs-link{color:#b68}.hljs-symbol,.hljs-bullet{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:bold}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}
+      /*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3f3f3f;
+  color: #dcdcdc;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #e3ceab;
+}
+
+.hljs-template-tag {
+  color: #dcdcdc;
+}
+
+.hljs-number {
+  color: #8cd0d3;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: #efdcbc;
+}
+
+.hljs-literal {
+  color: #efefaf;
+}
+
+.hljs-subst {
+  color: #8f8f8f;
+}
+
+.hljs-title,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  color: #efef8f;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #dca3a3;
+}
+
+.hljs-deletion,
+.hljs-string,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #cc9393;
+}
+
+.hljs-addition,
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #7f9f7f;
+}
+
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+ 
     
   </style>
+  
 
   
   <link rel="shortcut icon" 
@@ -442,6 +525,19 @@ body {
         <li>
           
           <a class="post-list" href="/posts/interactive-timelines-with-timevis/">Interactive timelines with timevis</a>
+
+          <p class="footnote">
+          <time datetime="04-04-2018">
+            04-04-2018
+          </time>
+          </p>
+        </li>
+        
+        
+        
+        <li>
+          
+          <a class="post-list" href="/posts/some-basics-for-getting-started-with-your-new-blogdown-lab-notebook/">Some basics for getting started with your new blogdown lab notebook</a>
 
           <p class="footnote">
           <time datetime="04-04-2018">

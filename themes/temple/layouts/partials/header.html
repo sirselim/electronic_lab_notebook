@@ -42,11 +42,12 @@
   <!-- Highlightjs CSS -->
   <style type="text/css" media="screen"> 
     {{ if isset .Site.Params "highlight" }}
-      {{ partial "css/docco.min.css" . | safeCSS }}
+      {{ partial "css/zenburn.css" . | safeCSS }} 
     {{ else }}
       {{ partial "css/default.min.css" . | safeCSS }}
     {{ end }}
   </style>
+  <!-- NOTE: edit the above css file to the highlight theme you would like, more themes can be added into css/ -->
 
   <!-- Icon -->
   <link rel="shortcut icon" 

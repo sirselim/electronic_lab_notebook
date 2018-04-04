@@ -12,17 +12,24 @@ enableEmoji = true
 
 [params]
   description = "A website built through Hugo and blogdown, used as an Electronic Lab Notebook (ELN)."
+  
   # Enables syntax highlighting
   highlight = true 
+  
   # Supports highlighting for languages not included in the original pack
   # See https://highlightjs.org/download/ for original pack
   # For reference to all languages, see:
   # https://github.com/isagalaev/highlight.js/tree/master/src/languages
   hjslangs = ["go", "vim", "shell", "bash", "markdown", "r", "python"]
+  ## NOTE: 
+  ## have made edits to Lab_notebook/themes/temple/layouts/partials/css/custom.css
+  ## which allow changing the highlighting theme by editing Lab_notebook/themes/temple/layouts/partials/header.html
+
   # Enables the topmenu, which pulls from categories
   topmenu = "categories"
-  MathJaxCDN = "//cdn.bootcss.com"
-  MathJaxVersion = "2.7.1"
+  
+  #MathJaxCDN = "//cdn.bootcss.com"
+  #MathJaxVersion = "2.7.1"
 
 [params.logo]
     url = "notebook.png" 

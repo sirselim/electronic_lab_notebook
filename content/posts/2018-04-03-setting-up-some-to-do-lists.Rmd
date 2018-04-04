@@ -21,7 +21,7 @@ We can create to-do lists for specific days/projects/assignments etc, here's an 
 
 ... and the Markdown that creates this:
 
-```
+```markdown
 - [x] Learn about RMarkdown
 - [x] Set up an electronic lab notebook
 - [ ] Perform a simple regression
@@ -41,7 +41,7 @@ It seems that when using Netlify to host the notebook the checkboxes don't displ
 <input id="checkBox" type="checkbox" checked> Add a working checkbox example  
 
 ... and the code for this:
-```
+```html
 <input id="checkBox" type="checkbox" checked> Learn about RMarkdown  
 <input id="checkBox" type="checkbox" checked> Set up an electronic lab notebook  
 <input id="checkBox" type="checkbox" checked> Perform a simple regression  
@@ -69,7 +69,7 @@ We can also use a little more HTML and inline css to create nested checkboxes:
 
 ... and the code:
 
-```
+```html
 <ul style="list-style: none;">  
  <li> <input id="checkBox" type="checkbox" checked> Learn about RMarkdown</li>
   <ul style="list-style: none;">  

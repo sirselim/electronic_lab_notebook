@@ -167,13 +167,15 @@ body {
 	height: auto;
 }
 
-.post-content code {
+/* these sections screw up other themes */ 
+/*.post-content code {
   background-color: #EEE;
 }
 
 .post code {
   background-color: #EEE;
-}
+} */
+/* to here */
 
 .post a {
 	color:#c05b4d;
