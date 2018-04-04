@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fun on Electronic Lab Notebook</title>
+    <link>/tags/fun/</link>
+    <description>Recent content in Fun on Electronic Lab Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>your@email.com (Your Name)</managingEditor>
+    <webMaster>your@email.com (Your Name)</webMaster>
+    <copyright>(c) 2018 -- All rights reserved.</copyright>
+    <lastBuildDate>Wed, 04 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/fun/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using emojis in this setup</title>
+      <link>/posts/using-emojis-in-this-setup/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/using-emojis-in-this-setup/</guid>
+      <description>I set the following flag in the config file:
+enableEmoji = true This should mean that emojis work, so the following code:
+:smile: :metal: :skull: Should provide these:
+:smile:
+:metal:
+:skull:
+Here is a cheatsheet of emoji codes: https://www.webpagefx.com/tools/emoji-cheat-sheet/</description>
+    </item>
+    
+  </channel>
+</rss>

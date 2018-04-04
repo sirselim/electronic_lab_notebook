@@ -1,9 +1,14 @@
 baseURL = "/"
+languageCode = "en-us"
 title = "Electronic Lab Notebook"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
 copyright = "(c) 2018 -- All rights reserved."
+googleAnalytics = ""
+disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+# enable emoji use, i.e. :smile:
+enableEmoji = true
 
 [params]
   # Enables syntax highlighting
@@ -12,9 +17,17 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   # See https://highlightjs.org/download/ for original pack
   # For reference to all languages, see:
   # https://github.com/isagalaev/highlight.js/tree/master/src/languages
-  hjslangs = ["go", "vim", "sh", "R", "python"]
+  hjslangs = ["go", "vim", "shell", "bash", "markdown", "r", "python"]
   # Enables the topmenu, which pulls from categories
   topmenu = "categories"
+  # description
+  description = "A website built through Hugo and blogdown, used as an Electronic Lab Notebook (ELN)."
+
+[params.logo]
+    url = "notebook.png" 
+  width = 50
+  height = 50
+  alt = "Logo"
 
 # Builds a list page for each category given
 [taxonomies]

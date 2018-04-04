@@ -1,0 +1,30 @@
+---
+title: Using emojis in this setup
+author: Your Name
+date: '2018-04-04'
+slug: using-emojis-in-this-setup
+categories:
+  - Experiment
+tags: 
+  - Fun
+menu: "main"
+---
+
+I set the following flag in the config file:
+
+```
+enableEmoji = true
+```
+
+This should mean that emojis work, so the following code:
+```
+:smile:
+:metal:
+:skull:
+```
+Should provide these:  
+:smile:  
+:metal:  
+:skull:  
+
+Here is a cheatsheet of emoji codes: https://www.webpagefx.com/tools/emoji-cheat-sheet/

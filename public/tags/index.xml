@@ -5,6 +5,7 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Electronic Lab Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>your@email.com (Your Name)</managingEditor>
     <webMaster>your@email.com (Your Name)</webMaster>
     <copyright>(c) 2018 -- All rights reserved.</copyright>
@@ -28,6 +29,15 @@
       <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/tags/authorea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fun</title>
+      <link>/tags/fun/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/tags/fun/</guid>
       <description></description>
     </item>
     

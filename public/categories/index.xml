@@ -5,6 +5,7 @@
     <link>/categories/</link>
     <description>Recent content in Categories on Electronic Lab Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <managingEditor>your@email.com (Your Name)</managingEditor>
     <webMaster>your@email.com (Your Name)</webMaster>
     <copyright>(c) 2018 -- All rights reserved.</copyright>
@@ -34,7 +35,7 @@
     <item>
       <title>Experiment</title>
       <link>/categories/experiment/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/categories/experiment/</guid>
       <description></description>
