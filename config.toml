@@ -11,6 +11,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 enableEmoji = true
 
 [params]
+  description = "A website built through Hugo and blogdown, used as an Electronic Lab Notebook (ELN)."
   # Enables syntax highlighting
   highlight = true 
   # Supports highlighting for languages not included in the original pack
@@ -20,8 +21,8 @@ enableEmoji = true
   hjslangs = ["go", "vim", "shell", "bash", "markdown", "r", "python"]
   # Enables the topmenu, which pulls from categories
   topmenu = "categories"
-  # description
-  description = "A website built through Hugo and blogdown, used as an Electronic Lab Notebook (ELN)."
+  MathJaxCDN = "//cdn.bootcss.com"
+  MathJaxVersion = "2.7.1"
 
 [params.logo]
     url = "notebook.png" 

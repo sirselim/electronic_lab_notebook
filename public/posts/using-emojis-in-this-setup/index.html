@@ -452,17 +452,41 @@ body {
       </div>
 
       <div class="post-content">
-        <p>I set the following flag in the config file:</p>
-<pre><code>enableEmoji = true</code></pre>
-<p>This should mean that emojis work, so the following code:</p>
-<pre><code>:smile:
-:metal:
-:skull:</code></pre>
-<p>Should provide these:<br />
-:smile:<br />
-:metal:<br />
-:skull:</p>
-<p>Here is a cheatsheet of emoji codes: <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" class="uri">https://www.webpagefx.com/tools/emoji-cheat-sheet/</a></p>
+        
+
+<p>To get access to emojis set the following flag in the config.toml file:</p>
+
+<pre><code>enableEmoji = true
+</code></pre>
+
+<p><strong><em>Note: for emojis to be interpreted correctly your file needs to be an <code>.Rmarkdown</code> file, <code>.Rmd</code> won&rsquo;t work.</em></strong></p>
+
+<p>This should mean that emojis work: 😄 🤘 💀</p>
+
+<p>Here is a cheatsheet of emoji codes: <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/">https://www.webpagefx.com/tools/emoji-cheat-sheet/</a></p>
+
+<h2 id="an-r-package-for-emojis">An R package for emojis</h2>
+
+<p>The package <a href="https://github.com/hadley/emo">emo(ji)</a> allows the insertion of emoji using R.</p>
+
+<pre><code class="language-r"># install.packages(&quot;devtools&quot;)
+devtools::install_github(&quot;hadley/emo&quot;)
+</code></pre>
+
+<p>Load the package:</p>
+
+<pre><code class="language-r">require(emo)
+</code></pre>
+
+<p>Then emoji can then be inserted inline <code>`r emo::ji(&quot;smile&quot;)`</code> 😄 or <code>`r emo::ji(&quot;metal&quot;)`</code> 🤘</p>
+
+<p>&hellip;or:</p>
+
+<pre><code class="language-r">emo::ji(&quot;poop&quot;)
+</code></pre>
+
+<pre><code>## 💩
+</code></pre>
 
       </div>
     </div>

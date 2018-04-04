@@ -20,13 +20,12 @@
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/posts/using-emojis-in-this-setup/</guid>
-      <description>I set the following flag in the config file:
-enableEmoji = true This should mean that emojis work, so the following code:
-:smile: :metal: :skull: Should provide these:
-:smile:
-:metal:
-:skull:
-Here is a cheatsheet of emoji codes: https://www.webpagefx.com/tools/emoji-cheat-sheet/</description>
+      <description>To get access to emojis set the following flag in the config.toml file:
+enableEmoji = true  Note: for emojis to be interpreted correctly your file needs to be an .Rmarkdown file, .Rmd won&amp;rsquo;t work.
+This should mean that emojis work: 😄 🤘 💀
+Here is a cheatsheet of emoji codes: https://www.webpagefx.com/tools/emoji-cheat-sheet/
+An R package for emojis The package emo(ji) allows the insertion of emoji using R.
+# install.packages(&amp;quot;devtools&amp;quot;) devtools::install_github(&amp;quot;hadley/emo&amp;quot;)  Load the package:</description>
     </item>
     
   </channel>
