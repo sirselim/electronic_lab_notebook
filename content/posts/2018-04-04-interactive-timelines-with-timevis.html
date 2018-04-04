@@ -1,0 +1,64 @@
+---
+title: Interactive timelines with timevis
+author: Your Name
+date: '2018-04-04'
+slug: interactive-timelines-with-timevis
+categories:
+  - Administration
+  - Coding
+  - To-do
+tags:
+  - R
+  - R packages
+  - Rmarkdown
+menu: "main"
+---
+
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="/rmarkdown-libs/vis/vis.min.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/vis/vis.min.js"></script>
+<link href="/rmarkdown-libs/timeline/timevis.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/timevis-binding/timevis.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="/rmarkdown-libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="/rmarkdown-libs/bootstrap/shim/html5shiv.min.js"></script>
+<script src="/rmarkdown-libs/bootstrap/shim/respond.min.js"></script>
+
+
+<p>An example timeline created with the R package <a href="https://github.com/daattali/timevis">timevis</a>. <div id="htmlwidget-1" class="timevis html-widget" style="width:1260px;height:250px;">
+<div class="btn-group zoom-menu">
+<button type="button" class="btn btn-default btn-lg zoom-in" title="Zoom in">+</button>
+<button type="button" class="btn btn-default btn-lg zoom-out" title="Zoom out">-</button>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"items":[{"id":" 1","content":"Start","start":"2018-01-15","group":"3","type":"box","style":"color: black;","editable":"TRUE","fit":"TRUE"},{"id":" 2","content":"","start":"2018-02-15","end":"2018-10-07","group":"1","type":"background","style":"color: cadetblue;","editable":"TRUE","fit":"TRUE"},{"id":" 3","content":"Research Proposal","start":"2018-02-15","end":"2018-03-28","group":"1","type":"range","style":"color: cadetblue;","editable":"TRUE","fit":"TRUE"},{"id":" 4","content":"Obj 1. Phenotype Data QC & Analysis","start":"2018-03-29","end":"2018-05-07","group":"2","type":"range","style":"color: darkred;","editable":"TRUE","fit":"TRUE"},{"id":" 5","content":"Obj 2. Gneotype Data QC & Annotation","start":"2018-05-01","end":"2018-05-28","group":"2","type":"range","style":"color: darkred;","editable":"TRUE","fit":"TRUE"},{"id":" 6","content":"Obj 3. Heritability Analysis","start":"2018-05-28","end":"2018-06-12","group":"2","type":"range","style":"color: darkred;","editable":"TRUE","fit":"TRUE"},{"id":" 7","content":"Obj 4. Pedigree-based GWAS","start":"2018-06-12","end":"2018-07-28","group":"2","type":"range","style":"color: darkred;","editable":"TRUE","fit":"TRUE"},{"id":" 8","content":"Obj 5. Machine-learning GWAS","start":"2018-07-28","end":"2018-09-20","group":"2","type":"range","style":"color: darkred;","editable":"TRUE","fit":"TRUE"},{"id":" 9","content":"Finish","start":"2018-11-01","group":"3","type":"box","style":"color: black;","editable":"TRUE","fit":"TRUE"},{"id":"10","content":"","start":"2018-03-29","end":"2018-09-20","group":"2","type":"background","style":"color: darkred;","editable":"TRUE","fit":"TRUE"},{"id":"11","content":"Hand-in","start":"2018-10-07","group":"3","type":"box","style":"color: black;","editable":"TRUE","fit":"TRUE"}],"groups":[{"id":"1","content":"Writing"},{"id":"2","content":"Analysis"},{"id":"3","content":"Admin"}],"showZoom":true,"zoomFactor":0.5,"fit":true,"options":[],"height":250,"api":[]},"evals":[],"jsHooks":[]}</script></p>
+<p>The code to generate the above timeline:</p>
+<pre class="r"><code>library(timevis)
+
+data &lt;- data.frame(
+  id      = 1:11,
+  content = c(&quot;Start&quot;, &quot;&quot;, 
+              &quot;Research Proposal&quot;, &quot;Obj 1. Phenotype Data QC &amp; Analysis&quot;,
+              &quot;Obj 2. Gneotype Data QC &amp; Annotation&quot;, &quot;Obj 3. Heritability Analysis&quot;, 
+              &quot;Obj 4. Pedigree-based GWAS&quot;, &quot;Obj 5. Machine-learning GWAS&quot;, &quot;Finish&quot;, &quot;&quot;, &quot;Hand-in&quot;),
+  start   = c(&quot;2018-01-15&quot;, &quot;2018-02-15&quot;, 
+              &quot;2018-02-15&quot;, &quot;2018-03-29&quot;,
+              &quot;2018-05-01&quot;, &quot;2018-05-28&quot;, 
+              &quot;2018-06-12&quot;, &quot;2018-07-28&quot;, 
+              &quot;2018-11-01&quot;, &quot;2018-03-29&quot;, &quot;2018-10-07&quot;),
+  end     = c(NA, &quot;2018-10-07&quot;, 
+              &quot;2018-03-28&quot;, &quot;2018-05-07&quot;, 
+              &quot;2018-05-28&quot;, &quot;2018-06-12&quot;, 
+              &quot;2018-07-28&quot;, &quot;2018-09-20&quot;, 
+              NA, &quot;2018-09-20&quot;, NA),
+  group   = c(3, rep(1, 2), rep(2, 5),3, 2, 3),
+  type    = c(&quot;box&quot;, &quot;background&quot;, &quot;range&quot;, &quot;range&quot;, &quot;range&quot;, &quot;range&quot;, &quot;range&quot;, &quot;range&quot;, &quot;box&quot;, &quot;background&quot;, &quot;box&quot;),
+  style = c(&quot;color: black;&quot;, &quot;color: cadetblue;&quot;, &quot;color: cadetblue;&quot;, &quot;color: darkred;&quot;,
+            &quot;color: darkred;&quot;, &quot;color: darkred;&quot;, &quot;color: darkred;&quot;, &quot;color: darkred;&quot;, &quot;color: black;&quot;, &quot;color: darkred;&quot;, &quot;color: black;&quot;),
+  options = list(editable = TRUE),
+  fit = TRUE)
+
+groups &lt;- data.frame(id = c(1,2,3), content = c(&quot;Writing&quot;, &quot;Analysis&quot;, &quot;Admin&quot;))
+timevis(data, groups = groups)</code></pre>
