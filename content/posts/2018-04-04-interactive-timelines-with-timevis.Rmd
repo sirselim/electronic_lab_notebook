@@ -16,8 +16,9 @@ menu: "main"
 
 An example timeline created with the R package [timevis](https://github.com/daattali/timevis).
 ```{r, echo=FALSE}
+# load the package
 library(timevis)
-
+# define the data to be displayed
 data <- data.frame(
   id      = 1:11,
   content = c("Start", "", 
@@ -38,17 +39,23 @@ data <- data.frame(
   type    = c("box", "background", "range", "range", "range", "range", "range", "range", "box", "background", "box"),
   style = c("color: black;", "color: cadetblue;", "color: cadetblue;", "color: darkred;",
             "color: darkred;", "color: darkred;", "color: darkred;", "color: darkred;", "color: black;", "color: darkred;", "color: black;"),
-  options = list(editable = TRUE),
   fit = TRUE)
-
+# add configuration options allowing editing of content in timeline
+config <- list(
+      editable = TRUE,
+      multiselect = TRUE
+)
+# add grouping information
 groups <- data.frame(id = c(1,2,3), content = c("Writing", "Analysis", "Admin"))
-timevis(data, groups = groups, width = 1260, height = 250)
+# generate the timeline
+timevis(data, groups = groups, width = 1260, height = 250, options = config)
 ```
 
 The code to generate the above timeline:
 ```{r, eval=FALSE}
+# load the package
 library(timevis)
-
+# define the data to be displayed
 data <- data.frame(
   id      = 1:11,
   content = c("Start", "", 
@@ -69,9 +76,14 @@ data <- data.frame(
   type    = c("box", "background", "range", "range", "range", "range", "range", "range", "box", "background", "box"),
   style = c("color: black;", "color: cadetblue;", "color: cadetblue;", "color: darkred;",
             "color: darkred;", "color: darkred;", "color: darkred;", "color: darkred;", "color: black;", "color: darkred;", "color: black;"),
-  options = list(editable = TRUE),
   fit = TRUE)
-
+# add configuration options allowing editing of content in timeline
+config <- list(
+      editable = TRUE,
+      multiselect = TRUE
+)
+# add grouping information
 groups <- data.frame(id = c(1,2,3), content = c("Writing", "Analysis", "Admin"))
-timevis(data, groups = groups)
+# generate the timeline
+timevis(data, groups = groups, width = 1260, height = 250, options = config)
 ```
