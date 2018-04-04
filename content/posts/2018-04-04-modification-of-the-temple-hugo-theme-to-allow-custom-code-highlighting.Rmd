@@ -1,0 +1,60 @@
+---
+title: Modification of the temple hugo theme to allow custom code highlighting
+author: New Author
+date: '2018-04-04'
+slug: modification-of-the-temple-hugo-theme-to-allow-custom-code-highlighting
+categories:
+  - Coding
+tags:
+  - Hugo
+  - blogdown
+  - Rmarkdown
+---
+
+I respect the design of the temple theme for hugo and it's goal of been minimal, lightweight and fast - it's formed a great background framework for this design of an Electronic Lab Notebook. However, I always like a darker theme for my code (writing and highlighting) and I couldn't find a 'simple' solution in terms of editing the config.toml (though my css isn't up to scratch and I'm sure there is a nice way there...).
+
+Thus I've hacked together a method that allows user-defined selection of a code highlighting theme.
+
+First I commented out the following section in the `css/custom.css` file:
+
+```css
+.post-content code {
+  background-color: #EEE;
+}
+
+.post code {
+  background-color: #EEE;
+} 
+```
+
+This code was messing with the background colours of the code blocks.
+
+I then downloaded a range of highlight themes (https://highlightjs.org/) and added them to the same `css/` directory.
+
+It is then a quick edit of the `header.html` found in the theme directory, specifically this section:
+
+```html
+<!-- Highlightjs CSS -->
+  <style type="text/css" media="screen"> 
+    {{ if isset .Site.Params "highlight" }}
+      {{ partial "css/zenburn.css" . | safeCSS }} 
+    {{ else }}
+      {{ partial "css/default.min.css" . | safeCSS }}
+    {{ end }}
+  </style>
+```
+
+The above selects the `zenburn` theme for highlighting, simply change that entry to your desired theme, i.e. for `github` highlighting:
+
+```html
+<!-- Highlightjs CSS -->
+  <style type="text/css" media="screen"> 
+    {{ if isset .Site.Params "highlight" }}
+      {{ partial "css/github.css" . | safeCSS }} 
+    {{ else }}
+      {{ partial "css/default.min.css" . | safeCSS }}
+    {{ end }}
+  </style>
+```
+
+I'll look into a nice way of doing this, but for now it works.

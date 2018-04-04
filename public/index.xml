@@ -35,6 +35,15 @@ The code to generate the above timeline:</description>
     </item>
     
     <item>
+      <title>Modification of the temple hugo theme to allow custom code highlighting</title>
+      <link>/posts/modification-of-the-temple-hugo-theme-to-allow-custom-code-highlighting/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/modification-of-the-temple-hugo-theme-to-allow-custom-code-highlighting/</guid>
+      <description>I respect the design of the temple theme for hugo and it’s goal of been minimal, lightweight and fast - it’s formed a great background framework for this design of an Electronic Lab Notebook. However, I always like a darker theme for my code (writing and highlighting) and I couldn’t find a ‘simple’ solution in terms of editing the config.toml (though my css isn’t up to scratch and I’m sure there is a nice way there…).</description>
+    </item>
+    
+    <item>
       <title>Some basics for getting started with your new blogdown lab notebook</title>
       <link>/posts/some-basics-for-getting-started-with-your-new-blogdown-lab-notebook/</link>
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>

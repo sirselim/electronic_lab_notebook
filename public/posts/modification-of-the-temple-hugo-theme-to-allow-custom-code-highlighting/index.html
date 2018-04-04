@@ -3,8 +3,8 @@
 <head>
   
   <meta charset="utf-8">
-  <title>Tags</title>
-  <meta name="description" content="Tags">
+  <title>Modification of the temple hugo theme to allow custom code highlighting</title>
+  <meta name="description" content="Modification of the temple hugo theme to allow custom code highlighting">
   <meta name="author" content="Your Name">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -420,8 +420,6 @@ based on dark.css by Ivan Sagalaev
 
   
   
-  <link href="/tags/index.xml" rel="alternate" type="application/rss+xml" title="Electronic Lab Notebook Feed" />
-  
 
   <meta name="generator" content="Hugo 0.38" />
 
@@ -510,93 +508,71 @@ based on dark.css by Ivan Sagalaev
     <div class="pure-u-1-24 pure-u-md-1-6"></div>
 </div>
 
+
 <div class="pure-g">
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
   <div class="pure-u-11-12 pure-u-md-2-3">
-    <p class="posts-name">Tags:</p>
-    <div class="post-content">
-      <ul class="posts">
+    <div class="post">
+
+      <div class="post-title">
+        <p class="footnote">
+        <time class="">04-04-2018</time>
         
         
-        <li>
-          <a href="r">r</a>
-          <span>&#40;6&#41;</span>
-        </li>
+        |
         
-        <li>
-          <a href="rmarkdown">rmarkdown</a>
-          <span>&#40;5&#41;</span>
-        </li>
         
-        <li>
-          <a href="r-packages">r-packages</a>
-          <span>&#40;4&#41;</span>
-        </li>
+        tags: [ <a href="/tags/hugo">Hugo</a> <a href="/tags/blogdown">blogdown</a> <a href="/tags/rmarkdown">Rmarkdown</a> ]
         
-        <li>
-          <a href="analysis">analysis</a>
-          <span>&#40;1&#41;</span>
-        </li>
+
         
-        <li>
-          <a href="authorea">authorea</a>
-          <span>&#40;1&#41;</span>
-        </li>
+        categories: [<a href="/categories/coding">Coding</a> ]
         
-        <li>
-          <a href="blogdown">blogdown</a>
-          <span>&#40;1&#41;</span>
-        </li>
+
         
-        <li>
-          <a href="fun">fun</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-        <li>
-          <a href="hugo">hugo</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-        <li>
-          <a href="literature">literature</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-        <li>
-          <a href="python">python</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-        <li>
-          <a href="reading">reading</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-        <li>
-          <a href="regression">regression</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-        <li>
-          <a href="reticulate">reticulate</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-        <li>
-          <a href="to-do-list">to-do-list</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-        <li>
-          <a href="writing">writing</a>
-          <span>&#40;1&#41;</span>
-        </li>
-        
-      </ul>
+        </p>
+        <h1>Modification of the temple hugo theme to allow custom code highlighting</h1>
+      </div>
+
+      <div class="post-content">
+        <p>I respect the design of the temple theme for hugo and it’s goal of been minimal, lightweight and fast - it’s formed a great background framework for this design of an Electronic Lab Notebook. However, I always like a darker theme for my code (writing and highlighting) and I couldn’t find a ‘simple’ solution in terms of editing the config.toml (though my css isn’t up to scratch and I’m sure there is a nice way there…).</p>
+<p>Thus I’ve hacked together a method that allows user-defined selection of a code highlighting theme.</p>
+<p>First I commented out the following section in the <code>css/custom.css</code> file:</p>
+<pre class="css"><code>.post-content code {
+  background-color: #EEE;
+}
+
+.post code {
+  background-color: #EEE;
+} </code></pre>
+<p>This code was messing with the background colours of the code blocks.</p>
+<p>I then downloaded a range of highlight themes (<a href="https://highlightjs.org/" class="uri">https://highlightjs.org/</a>) and added them to the same <code>css/</code> directory.</p>
+<p>It is then a quick edit of the <code>header.html</code> found in the theme directory, specifically this section:</p>
+<pre class="html"><code>&lt;!-- Highlightjs CSS --&gt;
+  &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt; 
+    {{ if isset .Site.Params &quot;highlight&quot; }}
+      {{ partial &quot;css/zenburn.css&quot; . | safeCSS }} 
+    {{ else }}
+      {{ partial &quot;css/default.min.css&quot; . | safeCSS }}
+    {{ end }}
+  &lt;/style&gt;</code></pre>
+<p>The above selects the <code>zenburn</code> theme for highlighting, simply change that entry to your desired theme, i.e. for <code>github</code> highlighting:</p>
+<pre class="html"><code>&lt;!-- Highlightjs CSS --&gt;
+  &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt; 
+    {{ if isset .Site.Params &quot;highlight&quot; }}
+      {{ partial &quot;css/github.css&quot; . | safeCSS }} 
+    {{ else }}
+      {{ partial &quot;css/default.min.css&quot; . | safeCSS }}
+    {{ end }}
+  &lt;/style&gt;</code></pre>
+<p>I’ll look into a nice way of doing this, but for now it works.</p>
+
+      </div>
     </div>
   </div>
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
 <div class="footer pure-g">
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
   <div class="pure-u-11-12 pure-u-md-2-3">

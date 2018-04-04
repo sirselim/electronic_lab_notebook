@@ -24,6 +24,7 @@ The following *should* get you set up with a working version of the example note
 
 - [x] add a basic setup guide
 - [x] integrate static site with Netlify for auto-updating upon git push
-- [ ] add some more advanced content (i.e. htmlwidgets, shiny, etc.)
-  - [ ] add an interactive timeline
-  - [ ] add an example of a data table
+- [x] add some more advanced content (i.e. htmlwidgets, shiny, etc.)
+  - [x] add an interactive timeline
+  - [x] add an example of a data table
+- [x] customise the temple theme to accept user-defined code highlighting css
