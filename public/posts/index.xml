@@ -14,6 +14,16 @@
     
     
     <item>
+      <title>Interactive data tables in RMarkdown with DT</title>
+      <link>/posts/interactive-data-tables-in-rmarkdown-with-dt/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/interactive-data-tables-in-rmarkdown-with-dt/</guid>
+      <description>DT: An R interface to the DataTables library We can use the R package DT to render interactive (and pretty) table in HTML. From the RStudio documentation:
+ The R package DT provides an R interface to the JavaScript library DataTables. R data objects (matrices or data frames) can be displayed as tables on HTML pages, and DataTables provides filtering, pagination, sorting, and many other features in the tables.</description>
+    </item>
+    
+    <item>
       <title>Interactive timelines with timevis</title>
       <link>/posts/interactive-timelines-with-timevis/</link>
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>

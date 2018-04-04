@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/interactive-data-tables-in-rmarkdown-with-dt/</loc>
+    <lastmod>2018-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/interactive-timelines-with-timevis/</loc>
     <lastmod>2018-04-04T00:00:00+00:00</lastmod>
   </url>
