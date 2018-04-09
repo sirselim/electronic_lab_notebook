@@ -9,8 +9,10 @@ disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # enable emoji use, i.e. :smile:
 enableEmoji = true
+#pagination = 10
 
 [params]
+  subtitle = "An example Electronic Lab Notebook"
   description = "A website built through Hugo and blogdown, used as an Electronic Lab Notebook (ELN)."
   
   # Enables syntax highlighting
@@ -32,7 +34,7 @@ enableEmoji = true
   #MathJaxVersion = "2.7.1"
 
 [params.logo]
-    url = "notebook.png" 
+  url = "notebook.png" 
   width = 50
   height = 50
   alt = "Logo"
