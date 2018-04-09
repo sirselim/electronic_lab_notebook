@@ -26,7 +26,7 @@
     <item>
       <title>Authorea</title>
       <link>/tags/authorea/</link>
-      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/tags/authorea/</guid>
       <description></description>
@@ -38,6 +38,15 @@
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collaborative</title>
+      <link>/tags/collaborative/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/tags/collaborative/</guid>
       <description></description>
     </item>
     
@@ -143,7 +152,7 @@
     <item>
       <title>Writing</title>
       <link>/tags/writing/</link>
-      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/tags/writing/</guid>
       <description></description>

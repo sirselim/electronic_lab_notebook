@@ -9,10 +9,20 @@
     <managingEditor>your@email.com (Your Name)</managingEditor>
     <webMaster>your@email.com (Your Name)</webMaster>
     <copyright>(c) 2018 -- All rights reserved.</copyright>
-    <lastBuildDate>Wed, 07 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/writing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Authorea to write scientific manuscripts</title>
+      <link>/posts/using-authorea-to-write-scientific-manuscripts/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/using-authorea-to-write-scientific-manuscripts/</guid>
+      <description>We’ve already written a small entry on Authorea and it’s use for collaborative scientific writing.
+Benefits of Authorea (in no particular order)  online  version controlled (via git) collaborative (in real time) access from anywhere on any device  easy front-end but extremely powerful  can write in LaTeX and/or Markdown and/or plain text No more screwing around with weird margin sliders and page layout tools and header settings  simply throw in your text, edit the settings once, and watch all your text reflow into place   citation manager is built in and extremely easy to use!</description>
+    </item>
     
     <item>
       <title>Collaborative online writing with Authorea</title>

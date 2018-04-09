@@ -231,6 +231,7 @@ body {
 	height: auto;
 }
 
+/* ------------------------------------ */
 /* these sections screw up other themes */ 
 /*.post-content code {
   background-color: #EEE;
@@ -240,6 +241,7 @@ body {
   background-color: #EEE;
 } */
 /* to here */
+/* ------------------------------------ */
 
 .post a {
 	color:#c05b4d;
@@ -322,6 +324,39 @@ body {
 	}
 }
 
+blockquote {
+	font-family: Georgia, serif;
+	font-size: 16px;
+	font-style: italic;
+	width: 850px;
+	margin: 0.25em 0;
+	padding: 0.35em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
+	}
+	
+	blockquote:before {
+	display: block;
+	padding-left: 10px;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -10px;
+	top: -20px;
+	color: #7a7a7a;
+	}
+	
+	blockquote cite {
+	color: #999999;
+	font-size: 11px;
+	display: block;
+	margin-top: 5px;
+	}
+	 
+	blockquote cite:before {
+	content: "\2014 \2009";
+	}
   </style>
   
   <style type="text/css" media="screen"> 

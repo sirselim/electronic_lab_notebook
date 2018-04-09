@@ -1,0 +1,41 @@
+---
+title: Using Authorea to write scientific manuscripts
+author: Miles Benton
+date: '2018-04-09'
+slug: using-authorea-to-write-scientific-manuscripts
+categories:
+  - Writing
+tags:
+  - Writing
+  - Authorea
+  - Collaborative
+---
+
+We've already written a small entry on [Authorea](https://www.authorea.com) and it's use for collaborative scientific writing.
+
+## Benefits of Authorea (in no particular order)
+
+  - online
+    - version controlled (via git)
+    - **collaborative** (in real time)
+    - access from anywhere on any device
+  - easy front-end but extremely powerful
+    - can write in **LaTeX** and/or **Markdown** and/or plain text
+    - No more screwing around with weird margin sliders and page layout tools and header settings
+      + simply throw in your text, edit the settings once, and watch all your text reflow into place
+  - citation manager is built in and extremely easy to use!
+    - bibliography is maintained for you
+    - reference formatting is left until the end and is automatically tailored to selected journal
+  - powerful commenting system
+  - data can be hosted and associated with the document (truely open access)
+  - real-time visualisations (interactive)
+  - integration of code blocks and highlighting
+  - integration of iPython notebooks (R is a work in progress)
+  - seemless mathematical equation support and rendering
+  - direct integration with publishers 
+    - format citations and manuscript and submit to journals all in one click
+  - semantic, structured documents
+  
+## Example
+
+Here is an [example](https://www.authorea.com/users/21564/articles/285018-gene-regulatory-networks-are-hotspots-for-allele-specific-methylation).
