@@ -11,7 +11,7 @@ tags:
   - Collaborative
 ---
 
-We've already written a small entry on [Authorea](https://www.authorea.com) and it's use for collaborative scientific writing.
+We've already written a small entry on [Authorea](https://www.authorea.com) and it's use for collaborative scientific writing. Here I'll list a few of the major benefits/features that make it a perfect tool for collaborative writing which facilitates reproducibility.
 
 ## Benefits of Authorea (in no particular order)
 
@@ -27,14 +27,15 @@ We've already written a small entry on [Authorea](https://www.authorea.com) and 
     - bibliography is maintained for you
     - reference formatting is left until the end and is automatically tailored to selected journal
   - powerful commenting system
-  - data can be hosted and associated with the document (truely open access)
+  - data can be hosted and associated with the document (truly open access)
   - real-time visualisations (interactive)
   - integration of code blocks and highlighting
   - integration of iPython notebooks (R is a work in progress)
-  - seemless mathematical equation support and rendering
+  - seamless mathematical equation support and rendering
   - direct integration with publishers 
     - format citations and manuscript and submit to journals all in one click
   - semantic, structured documents
+  - **ability to host code and data along with the figures and text is a great move towards reproducibility and transparency**
   
 ## Example
 
