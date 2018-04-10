@@ -151,8 +151,13 @@ You can start using Authorea in seconds by signing up for a free account and beg
       <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/posts/using-the-blogdown-framework-for-electronic-notebooking/</guid>
-      <description>With a combination of fantastic software we are able to produce an estensible and reproducible electronic lab notebook!
-The tools  -- --  </description>
+      <description>With a combination of fantastic software we are able to produce an extensible and reproducible electronic lab notebook!
+The tools 
+
+
+
+
+ -- --  </description>
     </item>
     
   </channel>
