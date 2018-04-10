@@ -25,11 +25,32 @@ tags:
 <p><a href="https://github.com/"><img src="https://kanbanize.com/blog/wp-content/uploads/2014/11/GitHub.jpg" /></a></p>
 <p><a href="https://www.netlify.com/"><img src="https://sweetcode.io/wp-content/uploads/2018/01/download.png" /></a></p>
 </div>
-<!-- <div class="col5"> -->
-<!--   - one -->
-<!--   - two -->
-<!--   - three -->
-<!--   - four -->
-<!--   - five -->
-<!-- </div> -->
+<div id="note" class="section level4">
+<h4>Note:</h4>
+<p>To get the above line-up of images I added some style code to the site css:</p>
+<pre class="html"><code> &lt;style&gt;
+ #images  {
+     width: 1250px;
+     height: 300px;
+ }
+ #images img {
+     float: left;
+     width: auto;
+     height: 160px;
+     margin: 0 0 0 15px;
+ }
+&lt;/style&gt;</code></pre>
+<p>The images are then put in <code>&lt;div&gt;</code> elements and are linked via Markdown:</p>
+<pre class="html"><code>&lt;div id=&quot;images&quot;&gt;
+[![](https://pbs.twimg.com/profile_images/487270528386748418/xk08XoKb_400x400.png)](https://www.rstudio.com/)  
+
+[![](https://db.yihui.name/images/hex-blogdown.png)](https://github.com/rstudio/blogdown)  
+
+[![](https://pbs.twimg.com/profile_images/875029899614007298/NLZrk0Lw_400x400.jpg)](https://gohugo.io/)  
+
+[![](https://kanbanize.com/blog/wp-content/uploads/2014/11/GitHub.jpg)](https://github.com/)  
+
+[![](https://sweetcode.io/wp-content/uploads/2018/01/download.png)](https://www.netlify.com/)  
+&lt;/div&gt;</code></pre>
+</div>
 </div>

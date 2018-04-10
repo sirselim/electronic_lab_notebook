@@ -47,7 +47,8 @@ The tools
 
 
 
- -- --  </description>
+ Note: To get the above line-up of images I added some style code to the site css:
+ &amp;lt;style&amp;gt; #images { width: 1250px; height: 300px; } #images img { float: left; width: auto; height: 160px; margin: 0 0 0 15px; } &amp;lt;/style&amp;gt; The images are then put in &amp;lt;div&amp;gt; elements and are linked via Markdown:</description>
     </item>
     
   </channel>
