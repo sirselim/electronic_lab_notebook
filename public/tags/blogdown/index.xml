@@ -23,5 +23,15 @@
       <description>I respect the design of the temple theme for hugo and it’s goal of been minimal, lightweight and fast - it’s formed a great background framework for this design of an Electronic Lab Notebook. However, I always like a darker theme for my code (writing and highlighting) and I couldn’t find a ‘simple’ solution in terms of editing the config.toml (though my css isn’t up to scratch and I’m sure there is a nice way there…).</description>
     </item>
     
+    <item>
+      <title>Using the blogdown framework for electronic notebooking</title>
+      <link>/posts/using-the-blogdown-framework-for-electronic-notebooking/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/using-the-blogdown-framework-for-electronic-notebooking/</guid>
+      <description>With a combination of fantastic software we are able to produce an estensible and reproducible electronic lab notebook!
+The tools  -- --  </description>
+    </item>
+    
   </channel>
 </rss>

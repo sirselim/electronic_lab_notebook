@@ -60,6 +60,15 @@
     </item>
     
     <item>
+      <title>Github</title>
+      <link>/tags/github/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>/tags/hugo/</link>
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
@@ -74,6 +83,15 @@
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/tags/literature/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netlify</title>
+      <link>/tags/netlify/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/tags/netlify/</guid>
       <description></description>
     </item>
     

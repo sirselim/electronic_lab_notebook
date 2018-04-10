@@ -68,6 +68,11 @@
   </url>
   
   <url>
+    <loc>/posts/using-the-blogdown-framework-for-electronic-notebooking/</loc>
+    <lastmod>2018-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/administration/</loc>
     <lastmod>2018-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -128,6 +133,12 @@
   </url>
   
   <url>
+    <loc>/tags/github/</loc>
+    <lastmod>2018-01-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/hugo/</loc>
     <lastmod>2018-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -136,6 +147,12 @@
   <url>
     <loc>/tags/literature/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/netlify/</loc>
+    <lastmod>2018-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

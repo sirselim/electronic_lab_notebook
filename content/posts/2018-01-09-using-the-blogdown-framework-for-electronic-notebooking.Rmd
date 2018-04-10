@@ -1,0 +1,38 @@
+---
+title: Using the blogdown framework for electronic notebooking
+author: Miles Benton
+date: '2018-01-09'
+slug: using-the-blogdown-framework-for-electronic-notebooking
+categories:
+  - Administration
+tags:
+  - Hugo
+  - blogdown
+  - Rmarkdown
+  - GitHub
+  - Netlify
+---
+
+With a combination of fantastic software we are able to produce an estensible and reproducible electronic lab notebook!
+
+### The tools
+
+<div id="images">
+![](https://pbs.twimg.com/profile_images/487270528386748418/xk08XoKb_400x400.png)  
+
+![](https://db.yihui.name/images/hex-blogdown.png)  
+
+![](https://pbs.twimg.com/profile_images/875029899614007298/NLZrk0Lw_400x400.jpg)  
+
+![](https://kanbanize.com/blog/wp-content/uploads/2014/11/GitHub.jpg)  
+
+![](https://sweetcode.io/wp-content/uploads/2018/01/download.png)  
+</div>
+
+<!-- <div class="col5"> -->
+<!--   - one -->
+<!--   - two -->
+<!--   - three -->
+<!--   - four -->
+<!--   - five -->
+<!-- </div> -->

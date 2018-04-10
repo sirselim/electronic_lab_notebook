@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netlify on Electronic Lab Notebook</title>
+    <link>/tags/netlify/</link>
+    <description>Recent content in Netlify on Electronic Lab Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>your@email.com (Your Name)</managingEditor>
+    <webMaster>your@email.com (Your Name)</webMaster>
+    <copyright>(c) 2018 -- All rights reserved.</copyright>
+    <lastBuildDate>Tue, 09 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/netlify/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using the blogdown framework for electronic notebooking</title>
+      <link>/posts/using-the-blogdown-framework-for-electronic-notebooking/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/using-the-blogdown-framework-for-electronic-notebooking/</guid>
+      <description>With a combination of fantastic software we are able to produce an estensible and reproducible electronic lab notebook!
+The tools  -- --  </description>
+    </item>
+    
+  </channel>
+</rss>
