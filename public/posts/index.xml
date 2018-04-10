@@ -146,6 +146,16 @@ You can start using Authorea in seconds by signing up for a free account and beg
     </item>
     
     <item>
+      <title>Creating &#39;pretty&#39; tables using RMarkdown</title>
+      <link>/posts/creating-pretty-tables-using-rmarkdown/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      <author>your@email.com (Your Name)</author>
+      <guid>/posts/creating-pretty-tables-using-rmarkdown/</guid>
+      <description>Obviously R is capable of outputting data in various formats. The default method is functional but not ‘pretty’:
+dt &amp;lt;- mtcars[1:5, 1:6] dt ## mpg cyl disp hp drat wt ## Mazda RX4 21.0 6 160 110 3.90 2.620 ## Mazda RX4 Wag 21.0 6 160 110 3.90 2.875 ## Datsun 710 22.8 4 108 93 3.85 2.320 ## Hornet 4 Drive 21.4 6 258 110 3.08 3.215 ## Hornet Sportabout 18.</description>
+    </item>
+    
+    <item>
       <title>Using the blogdown framework for electronic notebooking</title>
       <link>/posts/using-the-blogdown-framework-for-electronic-notebooking/</link>
       <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>

@@ -68,6 +68,11 @@
   </url>
   
   <url>
+    <loc>/posts/creating-pretty-tables-using-rmarkdown/</loc>
+    <lastmod>2018-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/using-the-blogdown-framework-for-electronic-notebooking/</loc>
     <lastmod>2018-01-09T00:00:00+00:00</lastmod>
   </url>
@@ -181,13 +186,13 @@
   </url>
   
   <url>
-    <loc>/categories/reading/</loc>
+    <loc>/tags/reading/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/reading/</loc>
+    <loc>/categories/reading/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -229,13 +234,13 @@
   </url>
   
   <url>
-    <loc>/categories/writing/</loc>
+    <loc>/tags/writing/</loc>
     <lastmod>2018-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/writing/</loc>
+    <loc>/categories/writing/</loc>
     <lastmod>2018-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

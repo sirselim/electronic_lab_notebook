@@ -1,0 +1,261 @@
+---
+title: Creating 'pretty' tables using RMarkdown
+author: Miles Benton
+date: '2018-01-25'
+slug: creating-pretty-tables-using-rmarkdown
+categories:
+  - Administration
+  - Coding
+tags:
+  - R packages
+  - Rmarkdown
+---
+
+
+
+<p>Obviously R is capable of outputting data in various formats. The default method is functional but not ‘pretty’:</p>
+<pre class="r"><code>dt &lt;- mtcars[1:5, 1:6]
+dt</code></pre>
+<pre><code>##                    mpg cyl disp  hp drat    wt
+## Mazda RX4         21.0   6  160 110 3.90 2.620
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875
+## Datsun 710        22.8   4  108  93 3.85 2.320
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440</code></pre>
+<p>Now what happens if we use the <code>kable()</code> function from <code>knitr</code>:</p>
+<pre class="r"><code>kable(dt)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+</tr>
+<tr class="even">
+<td align="left">Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+</tr>
+<tr class="odd">
+<td align="left">Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+</tr>
+<tr class="even">
+<td align="left">Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+</tr>
+<tr class="odd">
+<td align="left">Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+</tr>
+</tbody>
+</table>
+<p>That’s looking better but we can provide more parameters to tweak the output:</p>
+<pre class="r"><code>dt %&gt;% 
+  kable(&quot;html&quot;, caption = &#39;This is a table with a caption&#39;, digits = 2, align = &#39;c&#39;) %&gt;% 
+  kable_styling(font_size = 14)</code></pre>
+<table class="table" style="font-size: 14px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-4">Table 1: </span>This is a table with a caption
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+mpg
+</th>
+<th style="text-align:center;">
+cyl
+</th>
+<th style="text-align:center;">
+disp
+</th>
+<th style="text-align:center;">
+hp
+</th>
+<th style="text-align:center;">
+drat
+</th>
+<th style="text-align:center;">
+wt
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Mazda RX4
+</td>
+<td style="text-align:center;">
+21.0
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+160
+</td>
+<td style="text-align:center;">
+110
+</td>
+<td style="text-align:center;">
+3.90
+</td>
+<td style="text-align:center;">
+2.62
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mazda RX4 Wag
+</td>
+<td style="text-align:center;">
+21.0
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+160
+</td>
+<td style="text-align:center;">
+110
+</td>
+<td style="text-align:center;">
+3.90
+</td>
+<td style="text-align:center;">
+2.88
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Datsun 710
+</td>
+<td style="text-align:center;">
+22.8
+</td>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+108
+</td>
+<td style="text-align:center;">
+93
+</td>
+<td style="text-align:center;">
+3.85
+</td>
+<td style="text-align:center;">
+2.32
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hornet 4 Drive
+</td>
+<td style="text-align:center;">
+21.4
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+258
+</td>
+<td style="text-align:center;">
+110
+</td>
+<td style="text-align:center;">
+3.08
+</td>
+<td style="text-align:center;">
+3.21
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hornet Sportabout
+</td>
+<td style="text-align:center;">
+18.7
+</td>
+<td style="text-align:center;">
+8
+</td>
+<td style="text-align:center;">
+360
+</td>
+<td style="text-align:center;">
+175
+</td>
+<td style="text-align:center;">
+3.15
+</td>
+<td style="text-align:center;">
+3.44
+</td>
+</tr>
+</tbody>
+</table>
+<div id="interactive-tables" class="section level3">
+<h3>Interactive tables</h3>
+<p>I will cover interactive tables generated using <code>htmltools</code> and the <code>DT</code> package at a later date.</p>
+<div id="note" class="section level4">
+<h4>Note:</h4>
+<p>I’ve added custom CSS to format the tables:</p>
+<pre class="css"><code>&lt;style type=&quot;text/css&quot;&gt;
+th {
+  background-color:#b1b1b1;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  padding:12px;}
+
+td{
+  background-color:#e7e7e7;
+    border-bottom:1px dotted black;
+    padding:2px;}
+
+table{ 
+  border-collapse:collapse;
+    margin:10px 150px
+    border: 1px solid black;}
+&lt;/style&gt;</code></pre>
+</div>
+</div>

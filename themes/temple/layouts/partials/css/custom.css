@@ -319,3 +319,21 @@ blockquote {
 	 margin: 0 0 0 15px;
  }
 </style>
+
+<style type="text/css">
+th {
+  background-color:#b1b1b1;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  padding:12px;}
+
+td{
+  background-color:#e7e7e7;
+  border-bottom:1px dotted black;
+  padding:2px;}
+
+table{ 
+  border-collapse:collapse;
+  margin:10px 150px
+  border: 1px solid black;}
+</style>

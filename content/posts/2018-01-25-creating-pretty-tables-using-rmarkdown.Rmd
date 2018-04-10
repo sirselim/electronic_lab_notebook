@@ -1,0 +1,69 @@
+---
+title: Creating 'pretty' tables using RMarkdown
+author: Miles Benton
+date: '2018-01-25'
+slug: creating-pretty-tables-using-rmarkdown
+categories:
+  - Administration
+  - Coding
+tags:
+  - R packages
+  - Rmarkdown
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# library(printr)
+library(knitr)
+library(kableExtra)
+options(knitr.table.format = 'markdown')
+```
+
+Obviously R is capable of outputting data in various formats. The default method is functional but not 'pretty':
+
+```{r}
+dt <- mtcars[1:5, 1:6]
+dt
+```
+
+Now what happens if we use the `kable()` function from `knitr`:
+
+```{r}
+kable(dt)
+```
+
+That's looking better but we can provide more parameters to tweak the output:
+
+```{r}
+dt %>% 
+  kable("html", caption = 'This is a table with a caption', digits = 2, align = 'c') %>% 
+  kable_styling(font_size = 14)
+```
+
+
+### Interactive tables
+
+I will cover interactive tables generated using `htmltools` and the `DT` package at a later date.
+
+
+#### Note:
+
+I've added custom CSS to format the tables:
+```css
+<style type="text/css">
+th {
+  background-color:#b1b1b1;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  padding:12px;}
+
+td{
+  background-color:#e7e7e7;
+	border-bottom:1px dotted black;
+	padding:2px;}
+
+table{ 
+  border-collapse:collapse;
+	margin:10px 150px
+	border: 1px solid black;}
+</style>
+```
