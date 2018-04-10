@@ -13,9 +13,9 @@ tags:
   - Netlify
 ---
 
-With a combination of fantastic software we are able to produce an extensible and reproducible electronic lab notebook!
+With a combination of fantastic software we are able to produce an extensible and reproducible electronic lab notebook! Below I will document the process I used to set up and modify a blogdown workflow to create a framework for electronic lab notebooking.
 
-### The tools
+### Links to the tools
 
 <div id="images">
 [![](https://pbs.twimg.com/profile_images/487270528386748418/xk08XoKb_400x400.png)](https://www.rstudio.com/)  
@@ -29,9 +29,29 @@ With a combination of fantastic software we are able to produce an extensible an
 [![](https://sweetcode.io/wp-content/uploads/2018/01/download.png)](https://www.netlify.com/)  
 </div>
 
+### 1. RStudio
+
+> RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. 
+
+### 2. blogdown
+
+> An open-source (GPL-3) R package to generate static websites based on R Markdown and Hugo.
+
+### 3. Hugo
+
+> **The world’s fastest framework for building websites.** Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+
+### 4. GitHub
+
+> GitHub brings together the world's largest community of developers to discover, share, and build better software. From open source projects to private team repositories, we're your all-in-one platform for collaborative development.
+
+### 5. Netlify
+
+> Build, deploy, and manage modern web projects. Get an all-in-one workflow that combines global deployment, continuous integration, and HTTPS. And that’s just the beginning. 
+
 #### Note:
 
-To get the above line-up of images I added some style code to the site css:
+To get the above line-up of images (top of page) with links I added some style code to the site css:
 
 ```html
  <style>

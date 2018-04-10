@@ -20,14 +20,13 @@
       <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
       <author>your@email.com (Your Name)</author>
       <guid>/posts/using-the-blogdown-framework-for-electronic-notebooking/</guid>
-      <description>With a combination of fantastic software we are able to produce an extensible and reproducible electronic lab notebook!
-The tools 
+      <description>With a combination of fantastic software we are able to produce an extensible and reproducible electronic lab notebook! Below I will document the process I used to set up and modify a blogdown workflow to create a framework for electronic lab notebooking.
+Links to the tools 
 
 
 
 
- Note: To get the above line-up of images I added some style code to the site css:
- &amp;lt;style&amp;gt; #images { width: 1250px; height: 300px; } #images img { float: left; width: auto; height: 160px; margin: 0 0 0 15px; } &amp;lt;/style&amp;gt; The images are then put in &amp;lt;div&amp;gt; elements and are linked via Markdown:</description>
+  1. RStudio  RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.</description>
     </item>
     
   </channel>
