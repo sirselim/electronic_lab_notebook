@@ -1,0 +1,19 @@
+---
+title: Testing the posting system
+author: Miles Benton
+date: '2018-04-13'
+slug: testing-the-posting-system
+categories:
+  - Administration
+tags:
+  - Fun
+  - Playing around
+draft: TRUE
+---
+
+### Testing - working this time
+
+```{r}
+head(mtcars)
+```
+
