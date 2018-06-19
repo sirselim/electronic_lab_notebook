@@ -31,13 +31,14 @@
       <div class="post-content">
         {{ .Content }}
       </div>
+      
+      <div class="post-content">
+        {{ partial "comments.html" . }}
+      </div>
+      
     </div>
   </div>
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
-</div>
-
-<div class="post-content">
-  {{ partial "comments.html" . }}
 </div>
 
 {{ partial "footer.html" . }}
