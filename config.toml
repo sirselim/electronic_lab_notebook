@@ -5,7 +5,7 @@ theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
 copyright = "(c) 2018 -- All rights reserved."
 googleAnalytics = ""
-disqusShortname = ""
+disqusShortname = "electronic-lab-notebook"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # enable emoji use, i.e. :smile:
 enableEmoji = true

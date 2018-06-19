@@ -197,13 +197,13 @@
   </url>
   
   <url>
-    <loc>/tags/reading/</loc>
+    <loc>/categories/reading/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/reading/</loc>
+    <loc>/tags/reading/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -245,13 +245,13 @@
   </url>
   
   <url>
-    <loc>/tags/writing/</loc>
+    <loc>/categories/writing/</loc>
     <lastmod>2018-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/writing/</loc>
+    <loc>/tags/writing/</loc>
     <lastmod>2018-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
